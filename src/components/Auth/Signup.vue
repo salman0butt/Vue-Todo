@@ -81,6 +81,7 @@
 
 <script>
   export default {
+    name: "signup",
     data:() =>({
       password: '',
       confirm_passowrd: '',
