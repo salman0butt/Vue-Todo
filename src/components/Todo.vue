@@ -6,10 +6,11 @@
           <Lists></Lists>
         </v-flex>
         <v-flex lg-6 pr-2 pl-2>
-          <Tasks></Tasks>
+          <router-view name="tasks" :key="$route.fullPath"></router-view>
+<!--          <Tasks></Tasks>-->
         </v-flex>
         <v-flex lg-3 pl-2>
-            <OptionsBar></OptionsBar>
+<!--            <OptionsBar></OptionsBar>-->
         </v-flex>
       </v-layout>
     </v-container>

@@ -1,7 +1,7 @@
 <template>
   <v-container fill-height>
     <v-layout align-center justify-center>
-      <v-flex xs12 sm8 md4>
+      <v-flex xs12 sm8 md8>
         <v-form>
           <v-card class="elevation-12">
             <v-toolbar dark color="blue">
@@ -17,11 +17,11 @@
             </v-card-text>
             <v-divider light></v-divider>
             <v-card-actions>
-              <v-btn rounded color="indigo" dark>
-                Sign In
+              <v-btn rounded color="indigo" dark to="/signup">
+                Sign Up
               </v-btn>
               <v-spacer></v-spacer>
-              <v-btn rounded color="primary" dark>
+              <v-btn rounded color="primary" dark @click.prevent="login()">
                 Log In
                 <v-icon>keyboard_arrow_right</v-icon>
               </v-btn>
@@ -35,6 +35,11 @@
 
 <script>
   export default {
-    name: "login"
+    name: "login",
+    methods: {
+      login() {
+        this.$router.push('/')
+      }
+    }
   };
 </script>

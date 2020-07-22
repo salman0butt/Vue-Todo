@@ -1,7 +1,7 @@
 <template>
   <v-list-item @click.prevent="toggle(index)">
     <v-list-item-action>
-      <v-btn icon>
+      <v-btn icon @click="openModel()">
         <v-icon color="pink">edit</v-icon>
       </v-btn>
     </v-list-item-action>
@@ -40,9 +40,15 @@
         // }
 
         console.log(index);
+      },
+      openModel() {
+        this.$router.push({
+          name: 'notes',
+          params: {taskId: this.task.id}
+        }).catch(()=>{});
       }
     }
-    //TODO lecture no 4
+    //TODO lecture no 6
   }
 </script>
 

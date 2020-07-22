@@ -23,6 +23,7 @@
     <v-divider></v-divider>
     <v-list style="height: calc(100% - 128px);overflow-y: scroll;">
       <v-list-item
+        :to="{name: 'tasks',params:{id: list.id} }"
         v-for="(list,key) in lists"
         v-bind:key="key"
       >
@@ -57,75 +58,75 @@
             title: "List 3",
             task: 4
           },      {
-            id: 1,
+            id: 4,
             title: "List 1",
             task: 12
           },
           {
-            id: 2,
+            id: 5,
             title: "List 2",
             task: 2
           },
           {
-            id: 3,
+            id: 6,
             title: "List 3",
             task: 4
           },
           {
-            id: 1,
+            id: 7,
             title: "List 1",
             task: 12
           },
           {
-            id: 2,
+            id: 8,
             title: "List 2",
             task: 2
           },
           {
-            id: 3,
-            title: "List 3",
-            task: 4
-          },      {
-            id: 1,
-            title: "List 1",
-            task: 12
-          },
-          {
-            id: 2,
-            title: "List 2",
-            task: 2
-          },
-          {
-            id: 3,
-            title: "List 3",
-            task: 4
-          },
-          {
-            id: 1,
-            title: "List 1",
-            task: 12
-          },
-          {
-            id: 2,
-            title: "List 2",
-            task: 2
-          },
-          {
-            id: 3,
+            id: 9,
             title: "List 3",
             task: 4
           },      {
-            id: 1,
+            id: 10,
             title: "List 1",
             task: 12
           },
           {
-            id: 2,
+            id: 11,
             title: "List 2",
             task: 2
           },
           {
-            id: 3,
+            id: 12,
+            title: "List 3",
+            task: 4
+          },
+          {
+            id: 13,
+            title: "List 1",
+            task: 12
+          },
+          {
+            id: 14,
+            title: "List 2",
+            task: 2
+          },
+          {
+            id: 15,
+            title: "List 3",
+            task: 4
+          },      {
+            id: 16,
+            title: "List 1",
+            task: 12
+          },
+          {
+            id: 17,
+            title: "List 2",
+            task: 2
+          },
+          {
+            id: 18,
             title: "List 3",
             task: 4
           },
